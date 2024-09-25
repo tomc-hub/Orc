@@ -1,0 +1,22 @@
+
+answer = input("Do you desire an adventure? (yea/nay) ")
+
+if answer.lower().strip() == "yea":
+
+    answer = input("You reach the outskirts of Uruk Ghai, capital of the orcs, after days of travel. You are out of rations, and morale is in the gutter. You likely have one more command to utter to your garrison before they desert you entirely. I advise you make it count. Do you choose to rest up for the night or proceed to the ominous Uruk Ghai?").lower().strip()
+    if answer== "proceed":
+        answer = input("With a sign of resignation, you tiredly wave your soldiers under the spiked barricades of Uruk Ghai. Grim faces march past you without a word. You've survived mutiny for the moment, but leading your men into the bestial heart of orcdom hasn't granted you any lasting favour. A slender (by orc standards) guard stands to attention as you approach the gate. Do you hail him or attempt to stride past him?")
+
+        if answer == "stride past him":
+            print("Bad idea. You are dead. Orc strong.")
+        else:
+            print("The orc grunts out a question - Name?")
+
+
+    elif answer == "rest up":
+        print("Your reluctance to enter the capital tested the frayed nerves of your garrison too far. Upon pretense of setting up camp, a swift blow to the back of the head ensures this unpopular command was your last.")
+
+else:
+    print("Shame on ye!")
+
+
